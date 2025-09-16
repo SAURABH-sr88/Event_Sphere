@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: ${SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/eventsphere}
+
+eventsphere:
+  jwt:
+    secret: "ZmFrZV9zZWNyZXRfX2V2ZW50c3BoZXJlX3NlY3JldA=="
+    expiration-ms: 86400000
